@@ -1,0 +1,617 @@
+/* ------------- */
+/* FONTS */
+/* ------------- */
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700;900&display=swap");
+
+/* ------------- */
+/* SETUP */
+/* ------------- */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Muli", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+}
+
+/* GENERAL */
+
+.title {
+  font-weight: 900;
+  font-size: 2.2rem;
+  letter-spacing: 0.1px;
+
+  color: #1f9751;
+}
+
+.subhead {
+  width: 55%;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.zip-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.zip-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-green-style {
+  text-transform: uppercase;
+  background-color: #50d27f;
+  font-weight: 900;
+  color: #fff;
+}
+
+.btn-green-style:hover {
+  color: #fff;
+  background-color: #599265;
+}
+
+.btn-yellow-style {
+  text-transform: uppercase;
+  background-color: #ffd600;
+  font-weight: 900;
+  color: #fff;
+}
+
+.btn-yellow-style:hover {
+  background-color: #e7c200;
+  border-color: #e7c200;
+  color: #fff;
+}
+
+.btn-green-style + .btn-yellow-style {
+  margin-left: 15px;
+}
+/* ------------- */
+/* HEADING SECTION */
+/* ------------- */
+
+/* NAV */
+
+#main_nav {
+  height: 76px;
+}
+
+#main_nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_logo {
+  max-width: 250px;
+}
+
+.nav_menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_item {
+  padding: 0 1em;
+}
+
+.nav_item a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.nav_item a:hover {
+  color: #1f9751;
+}
+
+/* ------------- */
+/* HOME PAGE */
+/* ------------- */
+/* HERO */
+
+.home_hero {
+  background-image: url("/assets/imgs/home-hero.png");
+  background-size: cover;
+  min-height: 400px;
+}
+
+.home_callout-box {
+  position: absolute;
+  left: 45px;
+  top: 28px;
+
+  border: 7px solid #1f9751;
+  border-radius: 14px;
+  padding: 30px;
+  background-color: #fff;
+  margin-top: 80px;
+}
+
+#leaf {
+  margin: 0 auto;
+}
+
+.home_title {
+  font-weight: 900;
+  color: #1f9751;
+}
+
+.banner-container {
+  margin: 3em 0;
+  padding: 2em 0;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.home_icon-banner img {
+  height: 75px;
+  padding: 15px;
+}
+
+#home-map {
+  height: 550px;
+  margin: 0 auto;
+}
+
+/* PROVIDER SEARCH */
+
+.provider-search {
+  background: #1f9751;
+}
+
+.provider-search_head {
+  color: #fff;
+  font-weight: 900;
+}
+
+.zip-button {
+  background-color: #ffd600;
+  border-color: #ffd600;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.zip-button:hover {
+  background-color: #e7c200;
+  border-color: #e7c200;
+}
+
+/* ------------- */
+/* MARKETPLACE PAGE */
+/* ------------- */
+
+/* HERO */
+
+.marketplace-landing_hero {
+  background-image: url("/assets/imgs/LawnMower.jpg");
+  background-size: cover;
+}
+
+.hero_heading {
+  font-weight: 900;
+  font-size: 2.5em;
+  padding-bottom: 0.6em;
+}
+
+.hero_list {
+  display: flex;
+  align-items: center;
+}
+
+.hero_list i {
+  color: #1f9751;
+  font-size: 2.4em;
+  padding-right: 0.4em;
+}
+
+.hero_check {
+  font-weight: 600;
+  font-size: 1.8em;
+}
+
+.hero_location {
+  padding-top: 60px;
+}
+
+.hero_location .col-4 {
+  padding-right: 25px;
+}
+
+.location_text {
+  font-weight: 700;
+}
+
+/* STEPS */
+
+.landing-steps .col-md-4 {
+  padding: 0;
+}
+
+.step {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.step h3 {
+  font-size: 1.5em;
+}
+
+.step p {
+  font-size: 0.9em;
+}
+
+.step i {
+  font-size: 2em;
+  padding-right: 0.5em;
+}
+
+#step001 {
+  background-color: #1f9751;
+}
+
+.step01 {
+  background-color: #015619;
+  clip-path: polygon(0% 0%, 90% 0%, 100% 47%, 90% 100%, 0% 100%);
+}
+
+#step002 {
+  background-color: #50d27f;
+}
+
+.step02 {
+  background-color: #1f9751;
+  clip-path: polygon(0% 0%, 90% 0%, 100% 47%, 90% 100%, 0% 100%);
+}
+
+.step03 {
+  background-color: #50d27f;
+}
+
+/* COUPONS */
+
+.coupon {
+  background: #ffffff;
+  border: 6px solid #44c05f;
+  border-radius: 13px;
+  padding: 20px 20px;
+  margin-top: 20px;
+}
+
+#coupon_top-pick {
+  margin-top: 40px;
+  position: relative;
+}
+
+.featured-banner {
+  position: absolute;
+  left: 25px;
+  top: -35px;
+  z-index: 10;
+}
+
+.featured_top-pick {
+  position: absolute;
+  top: -20px;
+  left: 37px;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  z-index: 11;
+}
+
+.coupon_first-row {
+  align-content: flex-end;
+  align-items: flex-end;
+  flex-flow: row wrap;
+}
+
+.coupon_logo {
+  height: 80px;
+}
+
+.coupon_rating-box p {
+  font-weight: 700;
+}
+
+.coupon_star {
+  color: #ffd600;
+}
+
+.coupon_call-us {
+  font-weight: 700;
+}
+
+.coupon_phone-icon {
+  background-color: #e7c200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.coupon_phone-icon i {
+  font-size: 2em;
+}
+
+.coupon_phone-number {
+  background-color: #ffd600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.coupon_phone-number p {
+  font-size: 1.6em;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.coupon_special-background {
+  background-image: url("../imgs/special-banner.svg");
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  background-position: center;
+}
+
+.coupon_special-offers {
+  padding-top: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.coupon_review-link {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.fa-angle-right {
+  padding-left: 5px;
+}
+
+.coupon_custom-coupon {
+  border: 3px dashed #7eca8f;
+  text-align: center;
+}
+
+.custom-coupon_title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 41px;
+  padding-top: 20px;
+  color: #09ce35;
+}
+
+.coupon_checklist {
+  list-style: none;
+}
+
+.coupon_item {
+  margin-left: 1.4em;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.fa-li {
+  left: -1em;
+  position: relative;
+}
+
+.coupon-alt {
+  background: #ffffff;
+  border: 4px solid #a1a1a1;
+  border-radius: 13px;
+  padding: 20px 20px;
+  margin-top: 20px;
+}
+
+.coupon_phone-icon-alt {
+  background-color: #599265;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.coupon_phone-icon-alt i {
+  font-size: 2em;
+  color: #fff;
+}
+
+.coupon_phone-number-alt {
+  background-color: #79c389;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.coupon_phone-number-alt p {
+  font-size: 1.6em;
+  font-weight: 900;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+#greenlawn {
+  height: 50px;
+}
+
+.disclaimer {
+  margin-top: 1.5em;
+}
+
+.disclaimer h5 {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.disclaimer p {
+  font-size: 0.8em;
+}
+
+/* ------------- */
+/* ABOUT PAGE */
+/* ------------- */
+
+.about_hero {
+  background-image: url("/assets/imgs/about-hero.png");
+  background-size: cover;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+/* ------------- */
+/* RATING PAGE */
+/* ------------- */
+
+.rate_hero {
+  background-image: url("/assets/imgs/rate-hero.jpg");
+  background-size: cover;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.secondary-subhead {
+  font-weight: 900;
+  font-size: 1.5rem;
+
+  color: #636363;
+}
+
+/* ------------- */
+/* ADVERTISING POLICY PAGE */
+/* ------------- */
+
+.advertising_hero {
+  background-image: url("/assets/imgs/advertising-hero.png");
+  background-size: cover;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+/* ------------- */
+/* COMPANY REVIEWS LANDING PAGE */
+/* ------------- */
+
+.company-reviews_hero {
+  background-image: url("/assets/imgs/LawnMower.jpg");
+  background-size: cover;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.coupon-review {
+  padding: 40px;
+  margin-bottom: 2em;
+}
+
+.coupon-review_logo {
+  max-height: 80px;
+}
+
+.coupon-review_rating {
+  margin: 0 auto;
+  font-weight: 900;
+}
+
+.coupon-review_title {
+  font-weight: 900;
+  padding-bottom: 0.6em;
+}
+
+.coupon-review_title + p {
+  padding-bottom: 0.6em;
+}
+
+.coupon-review_button-container {
+  padding-top: 0.5em;
+}
+
+/* ------- */
+/* FOOTER */
+/* ------- */
+
+.primary-footer {
+  background-color: #383838;
+  color: #fff;
+}
+
+.footer_logo {
+  max-width: 230px;
+  padding-bottom: 1rem;
+}
+
+.footer_title {
+  color: #1f9751;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding-bottom: 1rem;
+}
+
+.footer_menu {
+  list-style: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 767px) {
+  .step01,
+  .step02 {
+    clip-path: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero_check {
+    display: inline;
+  }
+
+  .featured-banner {
+    display: none;
+  }
+  .featured_top-pick {
+    display: none;
+  }
+  .breakpoint_center {
+    margin: 0 auto;
+  }
+}
