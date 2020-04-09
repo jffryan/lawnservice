@@ -49,6 +49,8 @@ input[type="number"] {
 }
 
 .zip-input {
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -182,6 +184,11 @@ input[type="number"] {
 .provider-search_head {
   color: #fff;
   font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.provider-search_body {
+  color: #fff;
 }
 
 .zip-button {
@@ -566,6 +573,392 @@ input[type="number"] {
   padding-top: 0.5em;
 }
 
+/* ------------- */
+/* SERVICEABLE AREAS PAGE */
+/* ------------- */
+
+.branch_hero {
+  min-height: 300px;
+  background: linear-gradient(
+    0deg,
+    rgba(25, 103, 48, 0.67),
+    rgba(25, 103, 48, 0.67)
+  );
+  background-image: url("../imgs/branch-hero.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.branch_hero .title {
+  color: #fff;
+}
+
+.branch_address {
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.branch_img-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.branch_img-container img {
+  border-radius: 50%;
+}
+
+.branch_phone-number {
+  background-color: #ffd600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  border-radius: 6px;
+}
+
+.branch_phone-number p {
+  font-size: 1.2em;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.branch_special-offers {
+  background-color: #f5f5f4;
+}
+
+.branch-title {
+  font-size: 1.8em;
+  font-weight: 900;
+  padding-bottom: 0.6em;
+}
+
+.branch_ratings {
+  margin-left: 0px;
+  margin-bottom: 1em;
+}
+
+.branch-summary_our-rating {
+  background-color: #1f9751;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding: 0.6em 1em;
+}
+
+.branch-summary_our-rating p {
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.branch-summary_user-rating {
+  background-color: #50d27f;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 0.6em 1em;
+}
+
+.branch-summary_user-rating p {
+  margin: 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.branch-summary_user-rating .coupon_star {
+  color: #196730;
+}
+
+.branch-summary_list {
+  margin-left: 18px;
+}
+
+.branch_review-link {
+  color: #000;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.branch_disclaimer {
+  background-color: #f5f5f4;
+  padding: 1.6em;
+}
+
+/* ------------- */
+/* BRANCH PAGE */
+/* ------------- */
+
+.rating_divider {
+  background-color: #50d27f;
+  width: 100px;
+  height: 2px;
+  margin-bottom: 2rem;
+}
+
+.rating_info-container {
+  border: 2px solid #1f9751;
+  border-radius: 21px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.rating_info-container .rating_rating {
+  color: #1f9751;
+  font-size: 1.2rem;
+}
+
+.rating_info-container .rating_rating span {
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.rating_info-container p {
+  color: #747474;
+  margin: 0;
+  font-weight: 600;
+}
+
+.rating-section h4 {
+  font-weight: 900;
+}
+
+.rating_review-link {
+  color: #1f9751;
+  font-weight: 700;
+}
+
+.rating_pros,
+.rating_cons {
+  padding: 1.6em 2em;
+  border-radius: 13px;
+}
+
+.rating_pros {
+  background-color: #50d27f;
+  color: #fff;
+}
+
+.rating_cons {
+  background-color: #dfdfdf;
+  color: #000;
+}
+
+.rating_pros h5,
+.rating_cons h5 {
+  font-weight: 700;
+}
+
+.rating_pros hr {
+  height: 2px;
+  background-color: #fff;
+}
+
+.rating_cons hr {
+  height: 2px;
+  background-color: #000;
+}
+
+.rating_pros ul,
+.rating_cons ul {
+  list-style: none;
+}
+
+.rating_pros .fa-li,
+.rating_cons .fa-li {
+  left: 0;
+  padding-right: 1em;
+}
+
+.rating_pros li,
+.rating_cons li {
+  padding-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+
+.list-fix {
+  padding-left: 15px;
+}
+
+.visitor_rating {
+  font-size: 1.6em;
+}
+
+.visitor_rating i:last-child {
+  padding-right: 1em;
+}
+
+.vistor_rating-container {
+  display: grid;
+  align-items: center;
+}
+
+.vistor_rating-container span {
+  display: inline;
+}
+
+.rating-bar {
+  justify-self: flex-end;
+}
+
+.rating_garnish {
+  align-self: flex-start;
+}
+
+/* .rating_garnish + div {
+  display: inline-block;
+} */
+
+.branch_information {
+  margin: 0;
+  font-weight: 700;
+}
+
+.rating_emphasis {
+  color: #1f9751;
+}
+
+.visitor_rating-container {
+  border: 1px solid #d6d6d6;
+  padding: 1.2em 1.6em;
+}
+
+.visitor_rating-container i {
+  font-size: 1.2em;
+  margin-left: 0.3em;
+}
+
+.visitor_rating-text {
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.visitor_user-info {
+  font-size: 0.9rem;
+  color: #878787;
+  margin: 0;
+}
+
+.visitor_user-info span {
+  font-weight: 700;
+  color: #000;
+  font-size: 0.95rem;
+}
+
+/* ------------- */
+/* REVIEW TEMPLATE PAGE */
+/* ------------- */
+
+.review-template_hero {
+  background-image: url("/assets/imgs/review-template-hero.jpg");
+  background-size: cover;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.review-template-coupon {
+  position: relative;
+}
+
+.review-template_logo-container {
+  position: absolute;
+  top: -70px;
+  left: 40px;
+  border: 6px solid #44c05f;
+  border-radius: 13px;
+  padding: 20px 20px;
+  background: #fff;
+}
+
+.review-template-coupon h6 {
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.coupon-review_table-of-contents {
+  background-color: #50d27f;
+  color: #fff;
+  padding: 1.6em;
+}
+
+.coupon-review_table-of-contents h5 {
+  font-weight: 900;
+}
+
+.coupon-review_table-of-contents hr {
+  background-color: #fff;
+  height: 2px;
+}
+
+.coupon-review_table-of-contents ul {
+  list-style: none;
+}
+
+.coupon-review_table-of-contents ul li {
+  margin-bottom: 0.6em;
+}
+
+.coupon-review_table-of-contents ul a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.review_rating-bar {
+  background-color: #50d27f;
+  border-radius: 13px;
+  display: flex;
+  align-content: center;
+}
+
+.review_rating-bar p {
+  margin: 0;
+  padding: 1em;
+  font-weight: 700;
+  color: #fff;
+}
+
+.review_rating-bar .coupon_star {
+  color: #196730;
+}
+
+.pros-and-cons .rating_pros,
+.pros-and-cons .rating_cons {
+  min-height: 190px;
+}
+
+.review_customer-review-container {
+  border: 5px solid #50d27f;
+  position: relative;
+  text-align: center;
+  padding: 4em 6em 3em 6em;
+  border-radius: 13px;
+}
+
+.quote-flourish {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translate(-27px);
+  z-index: 10;
+}
+
+.quote-flourish img {
+  height: 52px;
+  width: 52px;
+}
+
+.review_customer-review-name {
+  font-weight: 700;
+  margin: 0;
+}
+
 /* ------- */
 /* FOOTER */
 /* ------- */
@@ -589,6 +982,10 @@ input[type="number"] {
 
 .footer_menu {
   list-style: none;
+}
+
+.footer_menu li a {
+  color: #fff;
 }
 
 /* RESPONSIVE */
