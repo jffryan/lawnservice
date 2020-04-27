@@ -13,33 +13,68 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
-    <nav id="main_nav">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="main_nav">
       <div class="container">
-        <a href="https://lawnservice.com"
+        <a class="navbar-brand" href="/"
           ><img
-            src="/assets/imgs/lawnservice.jpg"
+            src="assets/imgs/mosquito-control-logo.png"
             class="nav_logo"
-            alt="lawnservice.com"
+            alt="mosquito control"
         /></a>
-        <ul class="nav_menu">
-          <li class="nav_item"><a href="/">Home</a></li>
-          <li class="nav_item"><a href="/about.html">About</a></li>
-          <li class="nav_item">
-            <a href="/advertising-policy.html">Advertising Policy</a>
-          </li>
-          <li class="nav_item"><a href="/how-we-rate.html">How We Rate</a></li>
-          <li class="nav_item">
-            <a href="/marketplace-landing.html">Marketplace</a>
-          </li>
-          <li class="nav_item"><i class="fas fa-search"></i></li>
-        </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Find Local Pest Control</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Reviews
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn my-2 my-sm-0" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
       </div>
     </nav>
     <header class="review-template_hero">
       <div class="container about_hero-container">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <h1 class="title">
+            <h6 class="editorial-review">EDITORIAL REVIEW</h6>
+            <h1 class="title alt">
               Each TruGreen Service Plan Comes With The Healthy Lawn Guarantee
             </h1>
           </div>
@@ -52,12 +87,12 @@
       <div class="provider-search py-4">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-5">
-              <h5 class="provider-search_head">
-                Find a TruGreen branch in your area
+            <div class="col-md-7">
+              <h5 class="provider-search_head provider_alt">
+                Find mosquito control providers in your area
               </h5>
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
               <div class="input-group">
                 <label for="zip" class="sr-only">Zip Code</label>
                 <input
@@ -641,9 +676,9 @@
     <footer class="primary-footer py-5">
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-sm-4">
             <img
-              src="assets/imgs/white-logo.png"
+              src="assets/imgs/mosquito-control-logo.png"
               class="footer_logo img-fluid"
             />
             <p>
@@ -653,27 +688,28 @@
               euismod velit.
             </p>
           </div>
-          <div class="col-5">
-            <h5 class="footer_title">Lawn Care Service Providers</h5>
+          <div class="col-sm-5">
+            <h5 class="footer_title">Mosquito Control Providers</h5>
             <div class="row">
               <div class="col-4">
                 <ul class="footer_menu">
+                  <li><a href="/review-template.html">Orkin</a></li>
                   <li><a href="/review-template.html">TruGreen</a></li>
-                  <li><a href="/review-template.html">Lawn doctor</a></li>
-                  <li><a href="/review-template.html">Natural Lawn</a></li>
-                  <li><a href="/review-template.html">Fairway Lawns</a></li>
-                  <li><a href="/review-template.html">Top Turf</a></li>
-                  <li><a href="/review-template.html">Weedman</a></li>
+                  <li><a href="/review-template.html">Terminix</a></li>
+                  <li><a href="/review-template.html">Lawn Doctor</a></li>
+                  <li><a href="/review-template.html">Ehrlich</a></li>
                 </ul>
               </div>
-              <div class="col-4">
+              <div class="col-sm-4">
                 <ul class="footer_menu">
-                  <li><a href="/review-template.html">Turf Masters</a></li>
-                  <li><a href="/review-template.html">Us Lawns</a></li>
-                  <li><a href="/review-template.html">The Grounds Guys</a></li>
-                  <li><a href="/review-template.html">Savatree</a></li>
+                  <li><a href="/review-template.html">Mosquito Joe</a></li>
                   <li>
-                    <a href="/review-template.html">Green Lawn Fertilizing</a>
+                    <a href="/review-template.html">Mosquito Authority</a>
+                  </li>
+                  <li><a href="/review-template.html">Mosquito Squad</a></li>
+                  <li><a href="/review-template.html">Mosquito Shield</a></li>
+                  <li>
+                    <a href="/review-template.html">Arrow Exterminators</a>
                   </li>
                 </ul>
               </div>
@@ -691,5 +727,20 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 /* ------------- */
 /* FONTS */
 /* ------------- */
-@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Sanchez&display=swap");
 
 /* ------------- */
 /* SETUP */
@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: "Muli", Arial, Helvetica, sans-serif;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 
@@ -35,17 +35,26 @@ input[type="number"] {
 /* GENERAL */
 
 .title {
-  font-weight: 900;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
   font-size: 2.2rem;
   letter-spacing: 0.1px;
-
   color: #1f9751;
 }
 
+.title.alt {
+  color: #000;
+}
+
 .subhead {
-  width: 55%;
-  font-size: 2em;
-  font-weight: 900;
+  font-size: 2.4rem;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
+  padding-bottom: 0.6rem;
+}
+
+.guide_subhead {
+  font-size: 2rem;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
+  padding-bottom: 0.8rem;
 }
 
 .zip-input {
@@ -59,21 +68,21 @@ input[type="number"] {
   border-bottom-left-radius: 0;
 }
 
-.btn-green-style {
+.btn-red-style {
   text-transform: uppercase;
-  background-color: #50d27f;
+  background-color: #cb151c;
   font-weight: 900;
   color: #fff;
 }
 
-.btn-green-style:hover {
+.btn-red-style:hover {
   color: #fff;
-  background-color: #599265;
+  background-color: #ed1c24;
 }
 
 .btn-yellow-style {
   text-transform: uppercase;
-  background-color: #ffd600;
+  background-color: #ffc700;
   font-weight: 900;
   color: #fff;
 }
@@ -84,7 +93,7 @@ input[type="number"] {
   color: #fff;
 }
 
-.btn-green-style + .btn-yellow-style {
+.btn-red-style + .btn-yellow-style {
   margin-left: 15px;
 }
 /* ------------- */
@@ -97,10 +106,8 @@ input[type="number"] {
   height: 76px;
 }
 
-#main_nav .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.navbar.navbar-dark {
+  background-color: #000;
 }
 
 .nav_logo {
@@ -113,18 +120,23 @@ input[type="number"] {
   justify-content: space-between;
 }
 
-.nav_item {
+.nav-item {
   padding: 0 1em;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
 }
 
-.nav_item a {
+.navbar .navbar-nav a.nav-link {
   text-decoration: none;
-  color: #000;
-  font-weight: 600;
+  color: #b7b7b7;
 }
 
-.nav_item a:hover {
-  color: #1f9751;
+.navbar .btn i {
+  color: #b7b7b7;
+}
+
+.navbar .navbar-nav a.nav-link:hover {
+  color: #cb151c;
 }
 
 /* ------------- */
@@ -133,30 +145,34 @@ input[type="number"] {
 /* HERO */
 
 .home_hero {
-  background-image: url("/assets/imgs/home-hero.png");
+  background-image: url("/assets/imgs/home-hero.jpg");
   background-size: cover;
   min-height: 400px;
 }
 
 .home_callout-box {
   position: absolute;
-  left: 45px;
-  top: 28px;
-
-  border: 7px solid #1f9751;
-  border-radius: 14px;
-  padding: 30px;
-  background-color: #fff;
-  margin-top: 80px;
-}
-
-#leaf {
+  left: 35px;
+  top: 48px;
+  width: 80%;
   margin: 0 auto;
+
+  border: 7px solid #cb151c;
+  border-radius: 14px;
+  padding: 35px;
+  padding-top: 50px;
+  background-color: #fff;
+  margin-top: 40px;
 }
 
 .home_title {
-  font-weight: 900;
-  color: #1f9751;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
+  color: #cb151c;
+  font-size: 2.3rem;
+}
+
+.home_callout-box p {
+  padding: 0.6em 0;
 }
 
 .banner-container {
@@ -166,25 +182,30 @@ input[type="number"] {
 }
 
 .home_icon-banner img {
-  height: 75px;
+  height: 65px;
   padding: 15px;
 }
 
 #home-map {
   height: 550px;
-  margin: 0 auto;
 }
 
 /* PROVIDER SEARCH */
 
 .provider-search {
-  background: #1f9751;
+  background: #cb151c;
 }
 
 .provider-search_head {
   color: #fff;
-  font-weight: 900;
-  font-size: 1.4rem;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+}
+
+.provider-search_head.provider_alt {
+  font-size: 1.6em;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 800;
 }
 
 .provider-search_body {
@@ -192,8 +213,8 @@ input[type="number"] {
 }
 
 .zip-button {
-  background-color: #ffd600;
-  border-color: #ffd600;
+  background-color: #ffc700;
+  border-color: #ffc700;
   font-weight: 700;
   font-size: 1rem;
 }
@@ -210,12 +231,12 @@ input[type="number"] {
 /* HERO */
 
 .marketplace-landing_hero {
-  background-image: url("/assets/imgs/LawnMower.jpg");
+  background-image: url("/assets/imgs/MosquitoExterminator-Half.jpg");
   background-size: cover;
 }
 
 .hero_heading {
-  font-weight: 900;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
   font-size: 2.5em;
   padding-bottom: 0.6em;
 }
@@ -226,13 +247,12 @@ input[type="number"] {
 }
 
 .hero_list i {
-  color: #1f9751;
+  color: #000;
   font-size: 2.4em;
   padding-right: 0.4em;
 }
 
 .hero_check {
-  font-weight: 600;
   font-size: 1.8em;
 }
 
@@ -245,7 +265,7 @@ input[type="number"] {
 }
 
 .location_text {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* STEPS */
@@ -275,32 +295,32 @@ input[type="number"] {
 }
 
 #step001 {
-  background-color: #1f9751;
+  background-color: #ae171c;
 }
 
 .step01 {
-  background-color: #015619;
+  background-color: #8d1216;
   clip-path: polygon(0% 0%, 90% 0%, 100% 47%, 90% 100%, 0% 100%);
 }
 
 #step002 {
-  background-color: #50d27f;
+  background-color: #cb151c;
 }
 
 .step02 {
-  background-color: #1f9751;
+  background-color: #ae171c;
   clip-path: polygon(0% 0%, 90% 0%, 100% 47%, 90% 100%, 0% 100%);
 }
 
 .step03 {
-  background-color: #50d27f;
+  background-color: #cb151c;
 }
 
 /* COUPONS */
 
 .coupon {
   background: #ffffff;
-  border: 6px solid #44c05f;
+  border: 6px solid #ef4545;
   border-radius: 13px;
   padding: 20px 20px;
   margin-top: 20px;
@@ -323,8 +343,7 @@ input[type="number"] {
   top: -20px;
   left: 37px;
 
-  font-style: normal;
-  font-weight: 900;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 19px;
   text-align: center;
@@ -339,7 +358,7 @@ input[type="number"] {
 }
 
 .coupon_logo {
-  height: 80px;
+  height: 60px;
 }
 
 .coupon_rating-box p {
@@ -347,19 +366,19 @@ input[type="number"] {
 }
 
 .coupon_star {
-  color: #ffd600;
+  color: #ffc700;
 }
 
 .coupon_call-us {
-  font-weight: 700;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
+  color: #505050;
 }
 
 .coupon_phone-icon {
-  background-color: #e7c200;
+  background-color: #e99d0b;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1em 0;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
@@ -369,7 +388,7 @@ input[type="number"] {
 }
 
 .coupon_phone-number {
-  background-color: #ffd600;
+  background-color: #ffc700;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,7 +399,7 @@ input[type="number"] {
 
 .coupon_phone-number p {
   font-size: 1.6em;
-  font-weight: 900;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
   margin-bottom: 0;
 }
 
@@ -393,30 +412,22 @@ input[type="number"] {
 
 .coupon_special-offers {
   padding-top: 12px;
-  font-weight: 700;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
 .coupon_review-link {
-  text-decoration: underline;
-  font-weight: 600;
+  color: #ed1c24;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
+  margin-left: 4em;
+}
+
+.coupon_review-link:hover {
+  color: #cb151c;
 }
 
 .fa-angle-right {
   padding-left: 5px;
-}
-
-.coupon_custom-coupon {
-  border: 3px dashed #7eca8f;
-  text-align: center;
-}
-
-.custom-coupon_title {
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 41px;
-  padding-top: 20px;
-  color: #09ce35;
 }
 
 .coupon_checklist {
@@ -443,7 +454,7 @@ input[type="number"] {
 }
 
 .coupon_phone-icon-alt {
-  background-color: #599265;
+  background-color: #959596;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -458,7 +469,7 @@ input[type="number"] {
 }
 
 .coupon_phone-number-alt {
-  background-color: #79c389;
+  background-color: #b1afaf;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -469,13 +480,15 @@ input[type="number"] {
 
 .coupon_phone-number-alt p {
   font-size: 1.6em;
-  font-weight: 900;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
   margin-bottom: 0;
   color: #fff;
 }
 
-#greenlawn {
-  height: 50px;
+.coupon_divider {
+  width: 98%;
+  margin: 0 auto;
+  background-color: #000;
 }
 
 .disclaimer {
@@ -496,9 +509,9 @@ input[type="number"] {
 /* ------------- */
 
 .about_hero {
-  background-image: url("/assets/imgs/about-hero.png");
+  background-image: url("/assets/imgs/MosquitoExterminator-Half.jpg");
   background-size: cover;
-  min-height: 300px;
+  min-height: 400px;
   display: flex;
   align-items: center;
 }
@@ -508,7 +521,7 @@ input[type="number"] {
 /* ------------- */
 
 .rate_hero {
-  background-image: url("/assets/imgs/rate-hero.jpg");
+  background-image: url("/assets/imgs/MosquitoExterminator-Half.jpg");
   background-size: cover;
   min-height: 300px;
   display: flex;
@@ -516,9 +529,8 @@ input[type="number"] {
 }
 
 .secondary-subhead {
-  font-weight: 900;
-  font-size: 1.5rem;
-
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
   color: #636363;
 }
 
@@ -527,7 +539,7 @@ input[type="number"] {
 /* ------------- */
 
 .advertising_hero {
-  background-image: url("/assets/imgs/advertising-hero.png");
+  background-image: url("/assets/imgs/MosquitoExterminator-Half.jpg");
   background-size: cover;
   min-height: 300px;
   display: flex;
@@ -539,7 +551,7 @@ input[type="number"] {
 /* ------------- */
 
 .company-reviews_hero {
-  background-image: url("/assets/imgs/LawnMower.jpg");
+  background-image: url("/assets/imgs/MosquitoExterminator-Half.jpg");
   background-size: cover;
   min-height: 300px;
   display: flex;
@@ -561,8 +573,9 @@ input[type="number"] {
 }
 
 .coupon-review_title {
-  font-weight: 900;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
   padding-bottom: 0.6em;
+  color: #000;
 }
 
 .coupon-review_title + p {
@@ -578,7 +591,7 @@ input[type="number"] {
 /* ------------- */
 
 .branch_hero {
-  min-height: 300px;
+  min-height: 360px;
   background: linear-gradient(
     0deg,
     rgba(25, 103, 48, 0.67),
@@ -609,7 +622,7 @@ input[type="number"] {
 }
 
 .branch_phone-number {
-  background-color: #ffd600;
+  background-color: #ffc700;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -619,8 +632,12 @@ input[type="number"] {
 
 .branch_phone-number p {
   font-size: 1.2em;
-  font-weight: 900;
   margin-bottom: 0;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
+}
+
+.call-us-svg {
+  padding-right: 0.7em;
 }
 
 .branch_special-offers {
@@ -629,7 +646,7 @@ input[type="number"] {
 
 .branch-title {
   font-size: 1.8em;
-  font-weight: 900;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
   padding-bottom: 0.6em;
 }
 
@@ -639,7 +656,7 @@ input[type="number"] {
 }
 
 .branch-summary_our-rating {
-  background-color: #1f9751;
+  background-color: #ae171c;
   display: flex;
   align-items: center;
   border-top-left-radius: 6px;
@@ -655,7 +672,7 @@ input[type="number"] {
 }
 
 .branch-summary_user-rating {
-  background-color: #50d27f;
+  background-color: #cb151c;
   display: flex;
   align-items: center;
   border-top-right-radius: 6px;
@@ -671,7 +688,7 @@ input[type="number"] {
 }
 
 .branch-summary_user-rating .coupon_star {
-  color: #196730;
+  color: #8d1216;
 }
 
 .branch-summary_list {
@@ -680,8 +697,11 @@ input[type="number"] {
 
 .branch_review-link {
   color: #000;
-  text-decoration: underline;
   font-weight: 700;
+}
+
+.branch_review-link:hover {
+  color: #cb151c;
 }
 
 .branch_disclaimer {
@@ -693,22 +713,27 @@ input[type="number"] {
 /* BRANCH PAGE */
 /* ------------- */
 
+#phone-box {
+  margin-left: 15px;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
+}
+
 .rating_divider {
-  background-color: #50d27f;
+  background-color: #000;
   width: 100px;
   height: 2px;
   margin-bottom: 2rem;
 }
 
 .rating_info-container {
-  border: 2px solid #1f9751;
+  border: 2px solid #000;
   border-radius: 21px;
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
 .rating_info-container .rating_rating {
-  color: #1f9751;
+  color: #d7151d;
   font-size: 1.2rem;
 }
 
@@ -721,16 +746,20 @@ input[type="number"] {
 .rating_info-container p {
   color: #747474;
   margin: 0;
-  font-weight: 600;
 }
 
 .rating-section h4 {
-  font-weight: 900;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
 }
 
 .rating_review-link {
-  color: #1f9751;
+  color: #d7151d;
   font-weight: 700;
+}
+
+.rating_review-link:hover {
+  color: #000;
 }
 
 .rating_pros,
@@ -740,7 +769,7 @@ input[type="number"] {
 }
 
 .rating_pros {
-  background-color: #50d27f;
+  background-color: #cb151c;
   color: #fff;
 }
 
@@ -810,9 +839,9 @@ input[type="number"] {
   align-self: flex-start;
 }
 
-/* .rating_garnish + div {
-  display: inline-block;
-} */
+.rating_garnish-container {
+  margin-right: -55px;
+}
 
 .branch_information {
   margin: 0;
@@ -820,7 +849,7 @@ input[type="number"] {
 }
 
 .rating_emphasis {
-  color: #1f9751;
+  color: #d7151d;
 }
 
 .visitor_rating-container {
@@ -855,11 +884,20 @@ input[type="number"] {
 /* ------------- */
 
 .review-template_hero {
-  background-image: url("/assets/imgs/review-template-hero.jpg");
+  background-image: url("/assets/imgs/MosquitoExterminator-Half.jpg");
   background-size: cover;
   min-height: 300px;
   display: flex;
   align-items: center;
+}
+
+.editorial-review {
+  font-weight: 800;
+  font-size: 0.8rem;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+
+  color: #9b9b9b;
 }
 
 .review-template-coupon {
@@ -870,7 +908,7 @@ input[type="number"] {
   position: absolute;
   top: -70px;
   left: 40px;
-  border: 6px solid #44c05f;
+  border: 6px solid #ef4545;
   border-radius: 13px;
   padding: 20px 20px;
   background: #fff;
@@ -882,13 +920,13 @@ input[type="number"] {
 }
 
 .coupon-review_table-of-contents {
-  background-color: #50d27f;
+  background-color: #cb151c;
   color: #fff;
   padding: 1.6em;
 }
 
 .coupon-review_table-of-contents h5 {
-  font-weight: 900;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
 }
 
 .coupon-review_table-of-contents hr {
@@ -911,7 +949,7 @@ input[type="number"] {
 }
 
 .review_rating-bar {
-  background-color: #50d27f;
+  background-color: #cb151c;
   border-radius: 13px;
   display: flex;
   align-content: center;
@@ -925,7 +963,7 @@ input[type="number"] {
 }
 
 .review_rating-bar .coupon_star {
-  color: #196730;
+  color: #f29a07;
 }
 
 .pros-and-cons .rating_pros,
@@ -934,7 +972,7 @@ input[type="number"] {
 }
 
 .review_customer-review-container {
-  border: 5px solid #50d27f;
+  border: 5px solid #000;
   position: relative;
   text-align: center;
   padding: 4em 6em 3em 6em;
@@ -945,13 +983,12 @@ input[type="number"] {
   position: absolute;
   top: -25px;
   left: 50%;
-  transform: translate(-27px);
+  transform: translate(-36px);
   z-index: 10;
 }
 
 .quote-flourish img {
   height: 52px;
-  width: 52px;
 }
 
 .review_customer-review-name {
@@ -959,12 +996,24 @@ input[type="number"] {
   margin: 0;
 }
 
+/* ------------- */
+/* GUIDE PAGE */
+/* ------------- */
+
+.guide_hero {
+  background-image: url("/assets/imgs/MosquitoExterminator.jpg");
+  background-size: cover;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
+
 /* ------- */
 /* FOOTER */
 /* ------- */
 
 .primary-footer {
-  background-color: #383838;
+  background-color: #000;
   color: #fff;
 }
 
@@ -974,9 +1023,9 @@ input[type="number"] {
 }
 
 .footer_title {
-  color: #1f9751;
+  color: #ffc700;
   font-size: 1.5rem;
-  font-weight: 900;
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
   padding-bottom: 1rem;
 }
 
