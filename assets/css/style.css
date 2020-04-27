@@ -69,7 +69,7 @@ input[type="number"] {
 }
 
 .btn-red-style {
-  text-transform: uppercase;
+  text-transform: capitalize;
   background-color: #cb151c;
   font-weight: 900;
   color: #fff;
@@ -222,6 +222,10 @@ input[type="number"] {
 .zip-button:hover {
   background-color: #e7c200;
   border-color: #e7c200;
+}
+
+.resource-search {
+  background-color: #b7b7b7;
 }
 
 /* ------------- */
@@ -1006,6 +1010,80 @@ input[type="number"] {
   min-height: 400px;
   display: flex;
   align-items: center;
+}
+
+/* RESOURCES LANDING PAGE */
+
+.resources_slider-section {
+  background-color: #ecf0f5;
+}
+
+.slider_inner {
+  background-color: #fff;
+  padding: 2em;
+  margin: 2em;
+}
+
+.slider_resource-img {
+  padding: 2em;
+}
+
+.slider_resource-text {
+  padding: 2em;
+}
+
+.slider_resource-text h5 {
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
+}
+
+.slider_resource-text p {
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 1.6px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-indicators li {
+  background-color: #c4c4c4;
+}
+
+.carousel-indicators li.active {
+  background-color: #cb151c;
+}
+
+.resources-landing_main h2 {
+  font-size: 1.6rem;
+}
+
+.card.resources_featured-guide {
+  border: 2px solid #878787;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card.resources_featured-guide h6 {
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
+  line-height: 1.6rem;
+  color: #000;
+}
+
+.article-list h5 {
+  font-family: "Sanchez", Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+}
+
+.article-list-item {
+  border-top: 1px dashed #b7b7b7;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.bg-gray {
+  background-color: #ecf0f5;
 }
 
 /* ------- */
